@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+</head>
+<style>
+    .error{
+        color: red;
+    }
+</style>
+<body>
+    <h1>New product</h1>
+    <form action="/insert" method="post">
+        Name <input type="text" name="name"> <span class="error">{{nameError}}</span>
+        <br>
+        Price <input type="text" name="price"> <span class="error">{{priceError}}</span>
+        <br>
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
